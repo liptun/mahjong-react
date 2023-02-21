@@ -1,6 +1,5 @@
 import React from 'react';
 import Tile from './Tile';
-import { TKind } from '../types';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {
@@ -9,11 +8,11 @@ export default {
   argTypes: {
     orientation: {
       options: ['left', 'right', 'bottom', 'top'],
-      control: { type: 'select' },
+      control: { type: 'radio' },
     },
     kind: {
       options: ['bambooOne', 'circleOne', 'characterOne'],
-      control: { type: 'select' },
+      control: { type: 'radio' },
     },
   },
 } as ComponentMeta<typeof Tile>;
