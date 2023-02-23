@@ -1,8 +1,8 @@
+import { styled } from '@stitches/react';
 import React, { FC } from 'react';
 
-import { TOrientation } from './types';
-import { reverseChildIndex } from './Row';
-import { styled } from '@stitches/react';
+import { reverseChildIndex } from '../Row';
+import { TOrientation } from '../types';
 
 const HighlightWrapper = styled('div', {
   position: 'relative',

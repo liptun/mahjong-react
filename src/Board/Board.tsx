@@ -1,5 +1,5 @@
-import React, { FC, ReactNode } from "react";
 import { styled } from "@stitches/react";
+import React, { FC, ReactNode } from "react";
 
 interface Props {
     children: ReactNode;

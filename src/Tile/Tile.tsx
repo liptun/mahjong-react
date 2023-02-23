@@ -1,7 +1,8 @@
-import * as S from './Tile.styled';
 import React, { FC } from 'react';
-import icons, { TIcons } from './icons';
+
 import { TOrientation } from '../types';
+import icons, { TIcons } from './icons';
+import * as S from './Tile.styled';
 
 interface Props {
   kind: keyof TIcons;

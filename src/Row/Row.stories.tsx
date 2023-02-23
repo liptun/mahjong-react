@@ -1,6 +1,7 @@
 import React from 'react';
-import Row from './Row';
+
 import Tile from '../Tile/Tile';
+import Row from './Row';
 
 export default {
   title: 'Row',

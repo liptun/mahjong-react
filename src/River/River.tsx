@@ -1,8 +1,8 @@
-import * as S from './River.styled';
 import React, { FC } from 'react';
 
 import Row from '../Row';
 import { TOrientation } from './../types';
+import * as S from './River.styled';
 
 interface Props {
   children: React.ReactElement[] | React.ReactElement;

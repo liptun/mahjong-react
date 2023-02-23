@@ -72,4 +72,3 @@ const Icons = {
 export default Icons;
 
 export type TIcons = typeof Icons;
-

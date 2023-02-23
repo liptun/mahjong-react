@@ -1,5 +1,6 @@
-import { reverseChildIndex } from '../Row';
 import { styled } from '@stitches/react';
+
+import { reverseChildIndex } from '../Row';
 
 export const RiverWrapper = styled('div', {
   display: 'flex',
