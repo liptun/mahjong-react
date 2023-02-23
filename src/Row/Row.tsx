@@ -1,7 +1,7 @@
-import { styled } from '@stitches/react';
 import React, { FC } from 'react';
-
 import { TOrientation } from '../types';
+import { styled } from '@stitches/react';
+
 
 export const reverseChildIndex = {
   '& > div:nth-child(1)': { zIndex: 17 },

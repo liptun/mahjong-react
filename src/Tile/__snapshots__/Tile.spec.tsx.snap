@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hello 1`] = `
+<body>
+  <div>
+    <div
+      class="c-eXFyNG"
+    >
+      <img
+        class="c-ckMSqc"
+        src="[object Object]"
+      />
+    </div>
+  </div>
+</body>
+`;

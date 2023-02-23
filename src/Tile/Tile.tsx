@@ -1,16 +1,14 @@
-import React, { FC } from 'react';
-import { TKind, TOrientation } from '../types';
-
-import icons, { TIcons } from './icons';
-
 import * as S from './Tile.styled';
+import React, { FC } from 'react';
+import icons, { TIcons } from './icons';
+import { TOrientation } from '../types';
 
 interface Props {
   kind: keyof TIcons;
   orientation?: TOrientation;
 }
 
-const Kind: FC<Props> = ({ kind, orientation = 'bottom' }) => {
+const Tile: FC<Props> = ({ kind, orientation = 'bottom' }) => {
   return (
     <S.Wrapper orientation={orientation}>
       <S.Vector src={icons[kind]} />
@@ -18,4 +16,4 @@ const Kind: FC<Props> = ({ kind, orientation = 'bottom' }) => {
   );
 };
 
-export default Kind;
+export default Tile;

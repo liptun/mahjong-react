@@ -1,32 +1,8 @@
+import * as S from './River.styled';
 import React, { FC } from 'react';
-import { styled } from '@stitches/react';
 
-import Row, { reverseChildIndex } from './Row';
-import { TOrientation } from './types';
-
-const RiverWrapper = styled('div', {
-  display: 'flex',
-  padding: '10px 32px 32px 10px',
-  variants: {
-    orientation: {
-      bottom: {
-        flexDirection: 'column',
-      },
-      left: {
-        flexDirection: 'row-reverse',
-        justifyContent: 'flex-end',
-        ...reverseChildIndex,
-      },
-      right: {
-        flexdirection: 'row',
-      },
-      top: {
-        flexDirection: 'column-reverse',
-        ...reverseChildIndex,
-      },
-    },
-  },
-});
+import Row from '../Row';
+import { TOrientation } from './../types';
 
 interface Props {
   children: React.ReactElement[] | React.ReactElement;
@@ -48,13 +24,13 @@ const River: FC<Props> = ({ children, orientation = 'bottom' }) => {
   }
 
   return (
-    <RiverWrapper orientation={orientation}>
+    <S.RiverWrapper orientation={orientation}>
       {rows.map((row, index) => (
         <Row key={index} spacing="none" orientation={orientation}>
           {row}
         </Row>
       ))}
-    </RiverWrapper>
+    </S.RiverWrapper>
   );
 };
 
