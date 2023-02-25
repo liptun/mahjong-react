@@ -5,20 +5,25 @@ import { TOrientation } from './../types';
 import * as S from './River.styled';
 
 interface Props {
-  children: React.ReactElement[] | React.ReactElement;
+  children?: React.ReactElement[] | React.ReactElement;
   orientation?: TOrientation;
 }
 
 const River: FC<Props> = ({ children, orientation = 'bottom' }) => {
-  const mappedChildren = React.Children.map(children, (child) => {
-    if (child.props.orientation) {
-      return child;
-    } else {
-      return React.cloneElement(child, { orientation });
-    }
-  });
-  let rows = [mappedChildren.splice(0, 6)];
   const chunkSize = 6;
+  const mappedChildren = React.Children.map(children, (child) =>
+    child
+      ? child.props.orientation
+        ? child
+        : React.cloneElement(child, { orientation })
+      : null
+  );
+
+  if (!mappedChildren) {
+    return null;
+  }
+
+  let rows = [mappedChildren.splice(0, 6)];
   for (let i = 0; i < mappedChildren.length; i + chunkSize) {
     rows = [...rows, mappedChildren.splice(0, 6)];
   }

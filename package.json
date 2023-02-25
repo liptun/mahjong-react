@@ -38,9 +38,10 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "build": "rm -rf ./dist && tsc",
+    "build": "rm -rf ./dist && tsc && yarn postbuild",
     "test": "jest",
     "dev": "start-storybook -p 6006",
-    "lint": "eslint . --ext .ts,.tsx"
+    "lint": "eslint . --ext .ts,.tsx",
+    "postbuild": "cp -r ./src/Tile/assets ./dist/Tile/ && cp ./src/svg.d.ts ./dist/"
   }
 }

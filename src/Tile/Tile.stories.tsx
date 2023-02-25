@@ -8,16 +8,15 @@ export default {
   args: { orientation: 'bottom', kind: 'bambooOne' },
   argTypes: {
     orientation: {
-      options: ['left', 'right', 'bottom', 'top'],
-      control: { type: 'radio' },
+      control: { type: 'inline-radio' },
     },
     kind: {
-      options: ['bambooOne', 'circleOne', 'characterOne'],
-      control: { type: 'radio' },
+      control: { type: 'inline-radio' },
     },
   },
 } as ComponentMeta<typeof Tile>;
 
 const Template: ComponentStory<typeof Tile> = (args) => <Tile {...args} />;
 
-export const Primary = Template.bind({});
+export const Basic = Template.bind({});
+Basic.storyName = 'Basic tile';

@@ -1,4 +1,3 @@
-import Row, { reverseChildIndex } from './Row';
+import Row from './Row';
 
 export default Row;
-export { reverseChildIndex };
