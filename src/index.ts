@@ -1,5 +1,5 @@
-import River from './River';
-import Row from './Row';
-import Tile from './Tile';
-
-export { River, Row, Tile };
+export { default as Board } from './Board';
+export { default as Highlight } from './Highlight';
+export { default as River } from './River';
+export { default as Row } from './Row';
+export { default as Tile } from './Tile';
