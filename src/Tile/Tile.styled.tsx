@@ -18,6 +18,10 @@ export const Wrapper = styled('div', {
   margin: '.1em',
   position: 'relative',
   padding: tile.padding,
+  svg: {
+    width: '100%',
+    height: '100%',
+  },
   '&::after, &::before': {
     content: '',
     position: 'absolute',

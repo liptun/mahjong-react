@@ -1,4 +1,4 @@
-export type TKind =
+export type Kind =
   | 'bambooOne'
   | 'bambooTwo'
   | 'bambooThree'
@@ -35,4 +35,4 @@ export type TKind =
   | 'windNorth'
   | 'blank';
 
-export type TOrientation = 'bottom' | 'left' | 'right' | 'top';
+export type Orientation = 'bottom' | 'left' | 'right' | 'top';
