@@ -15,6 +15,7 @@
     "@storybook/manager-webpack4": "^6.5.16",
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
+    "@svgr/cli": "^6.5.1",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.14.0",
@@ -42,6 +43,7 @@
     "test": "jest",
     "dev": "start-storybook -p 6006",
     "lint": "eslint . --ext .ts,.tsx",
-    "postbuild": "cp -r ./src/Tile/assets ./dist/Tile/ && cp ./src/svg.d.ts ./dist/"
+    "postbuild": "cp -r ./src/Tile/assets ./dist/Tile/ && cp ./src/svg.d.ts ./dist/",
+    "icons": "svgr --typescript --no-dimensions --out-dir ./src/Icons/ -- ./src/Icons/assets/"
   }
 }
