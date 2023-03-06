@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 
-import { TOrientation } from '../types';
+import { Orientation } from '../types';
 import * as S from './Row.styled';
 
 interface Props {
   children: React.ReactElement[] | React.ReactElement;
-  orientation?: TOrientation;
+  orientation?: Orientation;
   spacing?: 'none' | 'normal';
 }
 

@@ -39,11 +39,10 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "build": "rm -rf ./dist && tsc && yarn postbuild",
+    "build": "rm -rf ./dist && tsc",
     "test": "jest",
     "dev": "start-storybook -p 6006",
     "lint": "eslint . --ext .ts,.tsx",
-    "postbuild": "cp -r ./src/Tile/assets ./dist/Tile/ && cp ./src/svg.d.ts ./dist/",
     "icons": "svgr --typescript --no-dimensions --out-dir ./src/Icons/ -- ./src/Icons/assets/"
   }
 }

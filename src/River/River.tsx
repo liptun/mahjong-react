@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 
 import Row from '../Row';
-import { TOrientation } from './../types';
+import { Orientation } from './../types';
 import * as S from './River.styled';
 
 interface Props {
   children?: React.ReactElement[] | React.ReactElement;
-  orientation?: TOrientation;
+  orientation?: Orientation;
 }
 
 const River: FC<Props> = ({ children, orientation = 'bottom' }) => {

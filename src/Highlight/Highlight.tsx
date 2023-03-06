@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 
-import { TOrientation } from '../types';
+import { Orientation } from '../types';
 import * as S from './Highlight.styled';
 
 interface Props {
   children: React.ReactElement[] | React.ReactElement;
-  orientation?: TOrientation;
+  orientation?: Orientation;
 }
 
 const Highlight: FC<Props> = ({ children, orientation = 'bottom' }) => {
