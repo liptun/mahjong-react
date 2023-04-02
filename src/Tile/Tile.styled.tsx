@@ -52,19 +52,19 @@ export const Wrapper = styled('div', {
       left: {
         width: tile.height,
         height: tile.width,
-        '& img': {
+        '& svg': {
           transform: 'rotateZ(90deg)',
         },
       },
       right: {
         width: tile.height,
         height: tile.width,
-        '& img': {
+        '& svg': {
           transform: 'rotateZ(-90deg)',
         },
       },
       top: {
-        '& img': {
+        '& svg': {
           transform: 'rotateZ(180deg)',
         },
       },
