@@ -1,22 +1,17 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import React from 'react';
+import type { Meta, StoryObj } from '@storybook/react';
 
 import Tile from './Tile';
 
-export default {
+const meta: Meta<typeof Tile> = {
   component: Tile,
-  args: { orientation: 'bottom', kind: 'bambooOne' },
-  argTypes: {
-    orientation: {
-      control: { type: 'inline-radio' },
-    },
-    kind: {
-      control: { type: 'inline-radio' },
-    },
+};
+export default meta;
+
+type Story = StoryObj<typeof Tile>;
+
+export const Basic: Story = {
+  args: {
+    kind: 'bambooOne',
+    orientation: 'top',
   },
-} as ComponentMeta<typeof Tile>;
-
-const Template: ComponentStory<typeof Tile> = (args) => <Tile {...args} />;
-
-export const Basic = Template.bind({});
-Basic.storyName = 'Basic tile';
+};
