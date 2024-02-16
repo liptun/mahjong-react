@@ -12,10 +12,21 @@ export default meta;
 
 const Grid = styled('div', {
   display: 'grid',
-  gridTemplateColumns: 'repeat(4, 1fr)',
+  gridTemplateColumns: 'repeat(7, 1fr)',
+  gap: 16,
+  padding: 16,
+  background: '#eee',
 });
 const IconWrapper = styled('div', {
-  width: 200,
+  fontFamily: 'sans-serif',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  background: '#fff',
+  svg: {
+    width: '90%',
+  },
 });
 
 export const Iconography: StoryObj = {

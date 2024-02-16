@@ -1,0 +1,14 @@
+import { Meta, Title, IconGallery, IconItem } from '@storybook/blocks';
+import * as Icons from '.';
+
+<Meta title="Iconography" />
+
+<Title>Iconography</Title>
+
+<IconGallery>
+  {Object.entries(Icons).map(([title, Icon]) => (
+    <IconItem name={title}>
+      <Icon viewBox="0 0 139.764 200" />
+    </IconItem>
+  ))}
+</IconGallery>
