@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
-import River from '../River';
 
+import River from '../River';
 import Row from '../Row';
 import Tile from '../Tile/Tile';
 import Highlight from './Highlight';
